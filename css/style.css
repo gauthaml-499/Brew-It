@@ -476,7 +476,10 @@ h2 {
   display: grid; grid-template-columns: 1fr 1fr;
 }
 .contact-card-order, .contact-card-visit { padding: 3.5rem; }
-.contact-card-order { border-right: 1px solid var(--line-dark); }
+.contact-card-order {
+  border-right: 1px solid var(--line-dark);
+  display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;
+}
 .contact-card-order h2 {
   font-family: var(--font-accent); font-style: normal; font-weight: 600;
   text-transform: none; letter-spacing: 0;
@@ -484,7 +487,7 @@ h2 {
   color: var(--cream); margin: .5rem 0 1.1rem;
 }
 .contact-card-order > p { color: var(--cream); opacity: .72; max-width: 34ch; margin-bottom: 1.75rem; }
-.contact-card-link { color: var(--cream); opacity: .85; border-bottom-color: var(--gold-dim); margin-top: 1.4rem; }
+.contact-card-link { display: inline-flex; color: var(--cream); opacity: .85; border-bottom-color: var(--gold-dim); margin-top: 1.25rem; }
 
 .contact-card-visit .eyebrow { margin-bottom: 1.5rem; }
 .contact-card-list { margin-bottom: 1.5rem; }
