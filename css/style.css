@@ -253,7 +253,7 @@ h2 {
   letter-spacing: -.01em;
   margin-top: 1.1rem;
 }
-.hero-actions { margin-top: 3.25rem; display: flex; align-items: center; gap: 1.25rem; justify-content: flex-start; flex-wrap: wrap; }
+.hero-actions { margin-top: 1.6rem; display: flex; align-items: center; gap: 1.25rem; justify-content: flex-start; flex-wrap: wrap; }
 .hero-link {
   font-family: var(--font-accent); font-style: italic; font-weight: 500;
   font-size: 1.15rem; color: var(--cream);
