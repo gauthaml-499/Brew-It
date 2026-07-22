@@ -478,7 +478,7 @@ h2 {
 .contact-card-order, .contact-card-visit { padding: 3.5rem; }
 .contact-card-order {
   border-right: 1px solid var(--line-dark);
-  display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;
+  display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;
 }
 .contact-card-order h2 {
   font-family: var(--font-accent); font-style: normal; font-weight: 600;
