@@ -468,7 +468,7 @@ h2 {
 }
 
 /* ---------- Contact CTA ---------- */
-.contact-cta { background: var(--ink); padding: 0 1.5rem 7rem; }
+.contact-cta { background: var(--ink); padding: 7rem 1.5rem; }
 .contact-card {
   max-width: var(--container); margin: 0 auto;
   background: var(--ink-2); border: 1px solid var(--line-dark);
