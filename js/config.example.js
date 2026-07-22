@@ -5,14 +5,4 @@
 // keys placed here — values sitting in .env are not picked up automatically.
 window.BREW_IT_CONFIG = {
   // API_KEY: "",
-
-  // Google Maps JavaScript API key with the "Places API" enabled.
-  // Restrict it in Google Cloud Console to this site's HTTP referrer(s) —
-  // that's what makes it safe to ship in client-side JS.
-  // GOOGLE_PLACES_API_KEY: "",
-
-  // Optional: skip the name/address lookup by pasting the Place ID
-  // directly (Google's "Find your Place ID" tool). If omitted, main.js
-  // resolves it at runtime from the business name + address below.
-  // GOOGLE_PLACE_ID: "",
 };
