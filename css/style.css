@@ -206,26 +206,29 @@ h2 {
 .hero {
   position: relative;
   min-height: 100dvh;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; align-items: center; justify-content: flex-start;
   overflow: hidden;
   background: var(--ink);
 }
 .hero-media { position: absolute; inset: 0; }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; }
+.hero-media img, .hero-media video {
+  width: 100%; height: 100%; object-fit: cover; object-position: 70% center;
+}
 .hero-scrim {
   position: absolute; inset: 0;
   background:
-    linear-gradient(180deg, rgba(20,16,13,.55) 0%, rgba(20,16,13,.55) 40%, rgba(20,16,13,.92) 100%),
-    linear-gradient(90deg, rgba(20,16,13,.75) 0%, rgba(20,16,13,.25) 55%, rgba(20,16,13,.7) 100%);
+    linear-gradient(90deg, rgba(20,16,13,.92) 0%, rgba(20,16,13,.72) 32%, rgba(20,16,13,.32) 58%, rgba(20,16,13,.12) 100%),
+    linear-gradient(180deg, rgba(20,16,13,.15) 0%, rgba(20,16,13,.1) 55%, rgba(20,16,13,.8) 100%);
 }
 .hero-content {
-  position: relative; z-index: 2; text-align: center; color: var(--cream);
-  padding: 8rem 1.5rem 4rem; max-width: 900px;
+  position: relative; z-index: 2; text-align: left; color: var(--cream);
+  display: flex; flex-direction: column; align-items: flex-start;
+  padding: 8rem 6vw 4rem; max-width: 620px; width: 100%;
 }
 .hero-logo {
-  width: clamp(160px, 21vw, 260px);
+  width: clamp(64px, 7vw, 96px);
   height: auto;
-  margin: 0 auto 1.75rem;
+  margin: 0 0 1.5rem;
   filter: drop-shadow(0 12px 28px rgba(0,0,0,.45));
   animation: logo-in .8s var(--ease) both;
 }
@@ -235,12 +238,16 @@ h2 {
 .hero-title {
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-size: clamp(2rem, 5.5vw, 3.75rem);
-  line-height: .98;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: .95;
   letter-spacing: -.01em;
 }
 .hero-title .gold { color: var(--gold); }
-.hero-actions { margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.hero-tagline {
+  font-family: var(--font-body); color: var(--cream); opacity: .82;
+  font-size: clamp(1rem, 1.4vw, 1.15rem); max-width: 42ch; margin-top: 1.25rem;
+}
+.hero-actions { margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: flex-start; flex-wrap: wrap; }
 
 /* ---------- Ribbon ---------- */
 .ribbon {
@@ -535,6 +542,13 @@ h2 {
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
   .mobile-menu { display: flex; }
+
+  .hero-media img, .hero-media video { object-position: 65% center; }
+  .hero-scrim {
+    background:
+      linear-gradient(180deg, rgba(20,16,13,.5) 0%, rgba(20,16,13,.6) 45%, rgba(20,16,13,.88) 100%),
+      rgba(20,16,13,.4);
+  }
 
   .story-inner, .visit-inner { grid-template-columns: 1fr; gap: 3rem; }
   .menu-panel { grid-template-columns: 1fr; gap: 2rem; text-align: left; }
