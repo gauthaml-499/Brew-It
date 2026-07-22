@@ -252,13 +252,7 @@ h2 {
   letter-spacing: -.01em;
   margin-top: .85rem;
 }
-.hero-actions { margin-top: 2.5rem; display: flex; gap: 2rem; justify-content: flex-start; flex-wrap: wrap; }
-.hero-link {
-  color: var(--cream); font-weight: 600; font-size: .95rem;
-  border-bottom: 1.5px solid transparent; padding-bottom: .15rem;
-  transition: border-color .2s var(--ease);
-}
-.hero-link:hover { border-bottom-color: var(--gold); }
+.hero-actions { margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: flex-start; flex-wrap: wrap; }
 
 /* ---------- Ribbon ---------- */
 .ribbon {
