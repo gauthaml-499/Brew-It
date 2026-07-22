@@ -92,7 +92,7 @@
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#story">Our Story</a>
-      <a href="#menu">Menu</a>
+      <a href="menu.html">Menu</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
       <a href="visit.html">Visit</a>
@@ -103,7 +103,7 @@
   </div>
   <div class="mobile-menu" id="mobileMenu">
     <a href="#story">Our Story</a>
-    <a href="#menu">Menu</a>
+    <a href="menu.html">Menu</a>
     <a href="#gallery">Gallery</a>
     <a href="#reviews">Reviews</a>
     <a href="visit.html">Visit</a>
@@ -127,7 +127,7 @@
       <h1 class="hero-title">Brew-It<span class="gold">.</span></h1>
       <p class="hero-tagline">GOOD COFFEE.<br><span class="gold">GREAT DAYS.</span></p>
       <div class="hero-actions">
-        <a href="#menu" class="btn btn-gold"><svg class="icon-xs" aria-hidden="true"><use href="#icon-cup"/></svg> View Menu</a>
+        <a href="menu.html" class="btn btn-gold"><svg class="icon-xs" aria-hidden="true"><use href="#icon-cup"/></svg> View Menu</a>
         <a href="visit.html" class="btn btn-outline"><svg class="icon-xs" aria-hidden="true"><use href="#icon-pin"/></svg> Find Us</a>
       </div>
     </div>
@@ -264,56 +264,18 @@
     <div class="section-head">
       <p class="eyebrow eyebrow-light">On The Menu</p>
       <h2>Coffee, bakes &amp; a little bit more</h2>
-      <p class="section-sub">A sample of what's usually on the counter — ask in-store for the full, ever-changing line-up.</p>
+      <p class="section-sub">Great coffee, real bakes, and a full line-up of hot &amp; cold drinks — see everything we serve.</p>
     </div>
 
-    <div class="menu-tabs" role="tablist" aria-label="Menu categories">
-      <button class="menu-tab is-active" role="tab" aria-selected="true" aria-controls="panel-coffee" id="tab-coffee">Coffee</button>
-      <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-bakes" id="tab-bakes">Bakes &amp; Toasties</button>
-      <button class="menu-tab" role="tab" aria-selected="false" aria-controls="panel-cold" id="tab-cold">Cold Drinks</button>
+    <div class="menu-teaser-grid">
+      <img src="assets/images/photos/menu-coffee.jpg" alt="Flat white with delicate crema at Brew-It" loading="lazy" />
+      <img src="assets/images/photos/menu-bakes.jpg" alt="Basket of freshly baked cinnamon swirls" loading="lazy" />
+      <img src="assets/images/photos/menu-cold.jpg" alt="Three Brew-It iced bubble tea cans in matcha, taro and brown sugar" loading="lazy" />
     </div>
 
-    <div class="menu-panels">
-      <div class="menu-panel is-active" id="panel-coffee" role="tabpanel" aria-labelledby="tab-coffee">
-        <div class="menu-panel-media">
-          <img src="assets/images/photos/menu-coffee.jpg" alt="Flat white with delicate crema at Brew-It" loading="lazy" />
-        </div>
-        <ul class="menu-list">
-          <li><span class="menu-item-name">Americano</span><span class="menu-item-dots"></span><span class="menu-item-price">From £5.11</span></li>
-          <li><span class="menu-item-name">Flat White 236ml</span><span class="menu-item-dots"></span><span class="menu-item-price">£5.39</span></li>
-          <li><span class="menu-item-name">Latte</span><span class="menu-item-dots"></span><span class="menu-item-price">From £5.82</span></li>
-          <li><span class="menu-item-name">Cappuccino</span><span class="menu-item-dots"></span><span class="menu-item-price">From £5.82</span></li>
-          <li><span class="menu-item-name">Mochaccino</span><span class="menu-item-dots"></span><span class="menu-item-price">From £5.96</span></li>
-        </ul>
-      </div>
-
-      <div class="menu-panel" id="panel-bakes" role="tabpanel" aria-labelledby="tab-bakes" hidden>
-        <div class="menu-panel-media">
-          <img src="assets/images/photos/menu-bakes.jpg" alt="Basket of freshly baked cinnamon swirls" loading="lazy" />
-        </div>
-        <ul class="menu-list">
-          <li><span class="menu-item-name">BBQ Pulled Pork Toastie</span><span class="menu-item-dots"></span><span class="menu-item-price">£9.86</span></li>
-          <li><span class="menu-item-name">Ham &amp; Cheese Toastie</span><span class="menu-item-dots"></span><span class="menu-item-price">£9.23</span></li>
-          <li><span class="menu-item-name">Three Cheese Toastie</span><span class="menu-item-dots"></span><span class="menu-item-price">£8.87</span></li>
-          <li><span class="menu-item-name">Pizzetta Toastie</span><span class="menu-item-dots"></span><span class="menu-item-price">£8.87</span></li>
-          <li><span class="menu-item-name">Butter Croissant</span><span class="menu-item-dots"></span><span class="menu-item-price">£5.00</span></li>
-          <li><span class="menu-item-name">Pain au Chocolat</span><span class="menu-item-dots"></span><span class="menu-item-price">£3.70</span></li>
-        </ul>
-      </div>
-
-      <div class="menu-panel" id="panel-cold" role="tabpanel" aria-labelledby="tab-cold" hidden>
-        <div class="menu-panel-media">
-          <img src="assets/images/photos/menu-cold.jpg" alt="Three Brew-It iced bubble tea cans in matcha, taro and brown sugar" loading="lazy" />
-        </div>
-        <ul class="menu-list">
-          <li><span class="menu-item-name">Iced Latte</span><span class="menu-item-dots"></span><span class="menu-item-price">£6.24</span></li>
-          <li><span class="menu-item-name">Iced Americano</span><span class="menu-item-dots"></span><span class="menu-item-price">£5.96</span></li>
-          <li><span class="menu-item-name">Iced Mocha</span><span class="menu-item-dots"></span><span class="menu-item-price">£6.39</span></li>
-          <li><span class="menu-item-name">Pink Lemonade Cooler</span><span class="menu-item-dots"></span><span class="menu-item-price">£6.39</span></li>
-        </ul>
-      </div>
+    <div class="menu-teaser-cta">
+      <a href="menu.html" class="btn btn-gold">See Full Menu <svg class="icon-xs" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
     </div>
-    <p class="menu-note">Prices shown are for collection via Just Eat — ask in-store for today's counter prices and specials.</p>
   </section>
 
   <!-- GALLERY -->
@@ -390,7 +352,7 @@
 
     <nav class="footer-links" aria-label="Footer">
       <a href="#story">Our Story</a>
-      <a href="#menu">Menu</a>
+      <a href="menu.html">Menu</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
       <a href="visit.html">Visit</a>

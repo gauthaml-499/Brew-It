@@ -22,22 +22,6 @@
     });
   });
 
-  // --- Menu tabs ---
-  const tabs = document.querySelectorAll('.menu-tab');
-  const panels = document.querySelectorAll('.menu-panel');
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      tabs.forEach((t) => { t.classList.remove('is-active'); t.setAttribute('aria-selected', 'false'); });
-      panels.forEach((p) => { p.classList.remove('is-active'); p.hidden = true; });
-
-      tab.classList.add('is-active');
-      tab.setAttribute('aria-selected', 'true');
-      const panel = document.getElementById(tab.getAttribute('aria-controls'));
-      panel.classList.add('is-active');
-      panel.hidden = false;
-    });
-  });
-
   // --- Contact form ---
   // No backend is wired up yet. If a future API key is dropped into
   // js/config.js, this is where it would plug in (e.g. a form
@@ -68,7 +52,7 @@
 
   // --- Scroll reveal ---
   const revealTargets = document.querySelectorAll(
-    '.story-copy, .story-media, .value-grid li, .menu-panel, .g-item, .reviews-head, .contact-card-order, .contact-card-visit, .visit-info, .visit-map'
+    '.story-copy, .story-media, .value-grid li, .menu-teaser-grid img, .menu-cat, .g-item, .reviews-head, .contact-card-order, .contact-card-visit, .visit-info, .visit-map'
   );
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     revealTargets.forEach((el) => el.classList.add('reveal'));
