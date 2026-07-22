@@ -52,7 +52,7 @@
 
   // --- Scroll reveal ---
   const revealTargets = document.querySelectorAll(
-    '.story-copy, .story-media, .value-grid li, .menu-teaser-grid img, .menu-cat, .g-item, .reviews-head, .contact-card-order, .contact-card-visit, .visit-info, .visit-map'
+    '.story-copy, .story-media, .value-grid li, .menu-teaser-grid img, .g-item, .reviews-head, .contact-card-order, .contact-card-visit, .visit-info, .visit-map'
   );
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     revealTargets.forEach((el) => el.classList.add('reveal'));
