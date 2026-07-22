@@ -391,6 +391,28 @@ h2 {
 
 /* ---------- Full menu page ---------- */
 .full-menu { background: var(--ink); color: var(--cream); padding: 1rem 1.5rem 7rem; }
+
+.menu-jump {
+  display: flex; justify-content: center; gap: .75rem; flex-wrap: wrap;
+  max-width: var(--container); margin: 0 auto 4.5rem;
+}
+.menu-jump a {
+  color: var(--cream); font-weight: 600; font-size: .95rem;
+  padding: .7rem 1.4rem; border-radius: 999px; border: 1px solid var(--line-dark);
+  transition: opacity .2s var(--ease), border-color .2s var(--ease), background-color .2s var(--ease);
+}
+.menu-jump a:hover { border-color: var(--gold); background: rgba(201,162,75,.08); }
+
+.menu-section { scroll-margin-top: 6.5rem; margin-bottom: 5.5rem; }
+.menu-section:last-of-type { margin-bottom: 0; }
+.menu-section-title {
+  font-family: var(--font-display); text-transform: uppercase;
+  color: var(--cream); text-align: center;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem); letter-spacing: -.01em;
+  max-width: var(--container); margin: 0 auto 2.5rem;
+  padding-bottom: 1.25rem; border-bottom: 1px solid var(--line-dark);
+}
+
 .menu-cat-grid {
   max-width: var(--container); margin: 0 auto;
   display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 3.5rem 3rem;
