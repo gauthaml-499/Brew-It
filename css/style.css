@@ -243,12 +243,22 @@ h2 {
   line-height: .95;
   letter-spacing: -.01em;
 }
-.hero-title .gold { color: var(--gold); }
+.hero-content .gold { color: var(--gold); }
 .hero-tagline {
-  font-family: var(--font-body); color: var(--cream); opacity: .82;
-  font-size: clamp(1rem, 1.4vw, 1.15rem); max-width: 42ch; margin-top: 1.25rem;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  margin-top: .85rem;
 }
-.hero-actions { margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: flex-start; flex-wrap: wrap; }
+.hero-actions { margin-top: 2.5rem; display: flex; gap: 2rem; justify-content: flex-start; flex-wrap: wrap; }
+.hero-link {
+  color: var(--cream); font-weight: 600; font-size: .95rem;
+  border-bottom: 1.5px solid transparent; padding-bottom: .15rem;
+  transition: border-color .2s var(--ease);
+}
+.hero-link:hover { border-bottom-color: var(--gold); }
 
 /* ---------- Ribbon ---------- */
 .ribbon {
