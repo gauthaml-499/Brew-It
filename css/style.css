@@ -415,13 +415,12 @@ h2 {
 .gallery { background: var(--cream-2); padding: 7rem 1.5rem; }
 .gallery-grid {
   max-width: var(--container); margin: 0 auto;
-  columns: 3; column-gap: 1rem;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
 }
 .g-item {
-  break-inside: avoid; margin-bottom: 1rem;
-  overflow: hidden; border-radius: var(--radius);
+  overflow: hidden; border-radius: var(--radius); aspect-ratio: 3 / 4;
 }
-.g-item img { width: 100%; height: auto; display: block; transition: transform .5s var(--ease); }
+.g-item img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .5s var(--ease); }
 .g-item:hover img { transform: scale(1.06); }
 
 /* ---------- Reviews ---------- */
@@ -586,7 +585,7 @@ h2 {
 @media (max-width: 1024px) {
   .value-grid { grid-template-columns: repeat(3, 1fr); }
   .value-grid li:nth-child(4), .value-grid li:nth-child(5) { grid-column: span 1; }
-  .gallery-grid { columns: 2; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 860px) {
@@ -615,7 +614,7 @@ h2 {
 }
 
 @media (max-width: 600px) {
-  .gallery-grid { columns: 1; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: .6rem; }
   .hero-content { padding-top: 7rem; }
   .story, .menu, .gallery, .visit { padding: 4.5rem 1.25rem; }
   .full-menu { padding: .5rem 1.25rem 4.5rem; }
