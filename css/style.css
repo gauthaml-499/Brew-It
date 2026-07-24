@@ -277,7 +277,7 @@ h2 {
 .ribbon-track {
   display: inline-flex;
   width: max-content;
-  animation: ribbon-slide 32s linear infinite;
+  animation: ribbon-slide 96s linear infinite;
 }
 .ribbon-group { display: inline-flex; align-items: center; flex-shrink: 0; }
 .ribbon-item {
